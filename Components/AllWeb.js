@@ -5,10 +5,10 @@ function AllWeb() {
     <Container>
       <TitleWeb>All Websites</TitleWeb>
       <Website>
-          <Image src="/image 2.png" width={300} height={400} />
-          <Image src="/image 3.png" width={300} height={400} />
-          <Image src="/image 4.png" width={300} height={400} />
-          <Image src="/image 1.png" width={300} height={400} />
+          <img src="/image 4.png"/>
+          <img src="/image 3.png"/>
+          <img src="/image 2.png"/>
+          <img src="/image 1.png"/>
       </Website>
     </Container>
   );
@@ -31,9 +31,8 @@ const Website = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
    img {
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    aspect-ratio: 1/3;
+   width: 100%;
+   border-radius: 20px;
   }
 
 
