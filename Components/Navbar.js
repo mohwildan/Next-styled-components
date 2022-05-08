@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiSearchAlt } from "react-icons/bi";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -164,6 +164,7 @@ const NavInput = styled.input`
   font-size: 1rem;
   color: gray;
   padding-left: 0.5rem;
+  padding-right: 2rem;
   @media (max-width: 768px) {
     display: none;
   }

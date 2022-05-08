@@ -1,7 +1,3 @@
-import Img1 from "/public/IMG/image 1.png";
-import Img2 from "/public/IMG/image 2.png";
-import Img3 from "/public/IMG/image 3.png";
-import Img4 from "/public/IMG/image 4.png";
 import Image from "next/image";
 import styled from "styled-components";
 function AllWeb() {
@@ -9,10 +5,10 @@ function AllWeb() {
     <Container>
       <TitleWeb>All Websites</TitleWeb>
       <Website>
-          <Image src={Img2} width={300} height={400} />
-          <Image src={Img3} width={300} height={400} />
-          <Image src={Img4} width={300} height={400} />
-          <Image src={Img1} width={300} height={400} />
+          <Image src="/image 2.png" width={300} height={400} />
+          <Image src="/image 3.png" width={300} height={400} />
+          <Image src="/image 4.png" width={300} height={400} />
+          <Image src="/image 1.png" width={300} height={400} />
       </Website>
     </Container>
   );
