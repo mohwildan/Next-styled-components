@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <NavbarHeader>
       <NavbarContainer>
-        <Link href="">
+        <Link href="/">
           <Logo>MechaMaru.</Logo>
         </Link>
         <NavMenu click={click}>
@@ -21,17 +21,12 @@ function Navbar() {
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="/">
-              <Item>About</Item>
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link href="/">
+            <Link href="/Services">
               <Item>Services</Item>
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="/">
+            <Link href="/Contact">
               <Item>Contact</Item>
             </Link>
           </NavItem>
@@ -80,6 +75,7 @@ const Logo = styled.a`
   font-weight: 600;
   letter-spacing: 4px;
   font-size: clamp(1.575rem, 1.3026rem + 0.8718vw, 2rem);
+  cursor: pointer;
 `;
 const NavMenu = styled.ul`
   display: flex;
@@ -192,6 +188,8 @@ right: 0;
 top: 0;
 transform: translate(-100%, 100%);
 color: #292857;
+cursor: text;
+
 
 @media(max-width:768px){
   display: none;
