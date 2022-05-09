@@ -14,3 +14,11 @@ export const HeadServices = () => {
         </Head>
     )
 }
+
+export const HeadContact= () => {
+    return(
+        <Head>
+            <title>Contact Page | MechaMaru</title>
+        </Head>
+    )
+}
