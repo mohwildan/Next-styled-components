@@ -38,7 +38,7 @@ const Container = styled.div`
 const Contact = styled.div`
   width: 100%;
   display: flex;
-  height: 80vh;
+  max-height: 100vh;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);

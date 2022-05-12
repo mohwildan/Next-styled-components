@@ -6,6 +6,7 @@ function ContactInput() {
         <Input type='text' placeholder='James Bonts'/>
         <TextInput>Email</TextInput>
         <Input type='email' placeholder='JamesBon@gmail.com'/>
+        <TextAreaInput placeholder='write something'/>
         <InputSend>Send</InputSend>
         </InputMain>
     );
@@ -38,9 +39,22 @@ align-self: flex-start;
 border: none;
 background-color: #443466;
 color: #fff;
-margin-top: 1.3rem;
 padding: .5rem 2rem;
 border-radius: 5px;
 font-weight: 600;
 cursor: pointer;
+margin: 1.3rem 0;
+`
+const TextAreaInput = styled.textarea`
+border: 1px solid rgba(0,0,0,.2);
+padding: 1rem;
+border-radius: 10px;
+outline: none;
+resize: none;
+margin-top: 2rem;
+max-width: 100%;
+
+&::placeholder{
+    color: #786969;
+}
 `
