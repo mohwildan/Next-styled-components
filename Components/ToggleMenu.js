@@ -15,7 +15,7 @@ const NavTogle = styled.div`
   @media (min-width: 768px) {
     display: none;
   }
-  div {
+  div { 
     width: 35px;
     height: 3px;
     background-color: #292857;

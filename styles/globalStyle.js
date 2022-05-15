@@ -1,8 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import "@fontsource/source-sans-pro"
-
-
-
+import "@fontsource/source-sans-pro";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -36,6 +33,6 @@ a {
 .toggle-list:nth-child(3){
     transform: translateY(-10px) rotate(-45deg);
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
