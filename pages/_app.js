@@ -1,9 +1,9 @@
-import "../styles/globals.css";
-
+import GlobalStyle from "../styles/globalStyle";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <GlobalStyle />
       <Component {...pageProps} />
     </>
   );

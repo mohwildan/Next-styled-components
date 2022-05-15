@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiSearchAlt } from "react-icons/bi";
 import { useState } from "react";
+import ToggleMenu from "./ToggleMenu";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -31,9 +32,7 @@ function Navbar() {
             </Link>
           </NavItem>
         </NavMenu>
-        <NavTogle onClick={() => setClick(!click)}>
-          {click ? <FaTimes /> : <FaBars />}
-        </NavTogle>
+        <ToggleMenu click={click} setClick={setClick}/>
         <Div style={{position: "relative"}}>
           <NavInput type="text" placeholder={`Cari`} />
           <Search>
@@ -169,14 +168,7 @@ const NavInput = styled.input`
   }
 `;
 
-const NavTogle = styled.div`
-  font-size: 1.3rem;
-  color: #292857;
 
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
 const Div = styled.div`
 @media(max-width:768px){
   display: none;
